@@ -1,0 +1,141 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    color: #111111;
+    text-decoration: none;
+    font: bold;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    margin: 2em 0 2em 0;
+}
+
+.container {
+    margin: 1em 15%;
+    padding-bottom: 50px;
+}
+
+.links-menu {
+    margin-left: 6em;
+}
+
+.links-menu a {
+    margin-right: 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.home a {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.7em;
+    font-weight: 500;
+    
+}
+
+.cards {
+    margin: 0 0 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+    }
+
+.cards .card img {  
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.card .card__content p {
+    font-size: 1.3em;   
+    margin: 0.7em 0em 0.3em 0em;
+}
+
+.card .card__info p {
+    font-size: 1em;
+    color: #777777;
+    margin: 0em 0em 1em 0em;
+}
+
+.footer {
+    padding: 22px;
+    background: #EEEEEE;
+    font-size: 1em;
+    text-align: center;
+    color: #999999;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ====MODAL==== */
+
+.modal-overlay {
+    background-color: rgba(0,0,0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: rgba(255, 255, 255, 1);
+    width: 660px;
+    height: 413px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin: -206.5px 0 0 -330px;
+    border-radius: 10px;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    bottom: 15px;
+    margin-left: 48% ;
+    cursor: pointer;
+}
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content img {
+    width: 90%;
+    margin: 20px 0px 15px 32px;
+    border-radius: 10px;
+}
+
+.modal .modal-content .text {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.modal .modal-content .title {
+    text-align: center;
+    font-size: 14px;
+    opacity: 60%;
+}

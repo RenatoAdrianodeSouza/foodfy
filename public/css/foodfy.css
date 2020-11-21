@@ -1,0 +1,129 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    color: #111111;
+    text-decoration: none;
+    font: bold;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    margin: 2em 0 2em 0;
+}
+
+.container {
+    margin: 1em 15%;
+    padding-bottom: 50px;
+}
+
+.links-menu {
+    margin-left: 6em;
+}
+
+.links-menu a {
+    margin-right: 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.home a {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.7em;
+    font-weight: 500;
+    
+}
+
+.banner {
+    background-color: #FBDFDB;
+    height: 366px;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.banner .assunto .titulo {
+    align-self: center;
+    padding: 3.5em 0 0 2.5em;
+    font-size: 2.1em;
+    color: #000000;
+    line-height: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+}
+
+.banner .assunto .texto {
+    align-self: center;
+    padding: 0em 0em 0em 4.2em;
+    font-size: 1.2em;
+    color: #000000;
+    line-height: 1.5em;
+    opacity: 70%;
+    max-width: 370px;
+}
+
+.banner .imagem {
+    text-align: center;
+    align-self: end;
+}
+
+.titulo02 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #000000;
+    margin: 3em 0 1.5em 0;
+}
+
+.cards {
+    margin: 0 0 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+    }
+
+.cards .card img {  
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.card .card__content p {
+    font-size: 1.3em;   
+    margin: 0.7em 0em 0.3em 0em;
+}
+
+.card .card__info p {
+    font-size: 1em;
+    color: #777777;
+    margin: 0em 0em 1em 0em;
+}
+
+.footer {
+    padding: 22px;
+    background: #EEEEEE;
+    font-size: 1em;
+    text-align: center;
+    color: #999999;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
