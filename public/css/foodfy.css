@@ -12,10 +12,12 @@
 
 html {
     position: relative;
+    margin: 0 200px ;
 }
 
 body {
     min-height: 100vh;
+    padding-bottom: 8em;
 }
 
 a {
@@ -27,12 +29,7 @@ a {
 header {
     display: flex;
     align-items: baseline;
-    margin: 2em 0 2em 0;
-}
-
-.container {
-    margin: 1em 15%;
-    padding-bottom: 50px;
+    margin: 2em 0 4em 0;
 }
 
 .links-menu {
@@ -49,7 +46,6 @@ header {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.7em;
     font-weight: 500;
-    
 }
 
 .banner {

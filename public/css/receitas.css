@@ -27,12 +27,12 @@ a {
 header {
     display: flex;
     align-items: baseline;
-    margin: 2em 0 2em 0;
+    margin: 2em 0 4em 0;
 }
 
 .container {
-    margin: 1em 15%;
-    padding-bottom: 50px;
+    margin: 2em 15%;
+    padding-bottom: 5em;
 }
 
 .links-menu {
