@@ -1,27 +1,12 @@
-<!DOCTYPE html>
-<html lang="pr-br">
+{% extends "layout.njk" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/foodfy.css">
-    <title>Foodfy Home</title>
-</head>
+{% block head %}
 
-<body>
-    <div class="container">
-        <header>
-            <!-- <a href=""> -->
-            <h1 class="home">
-                <a href="/src/views/foodfy.html">Foodfy</a>
-            </h1>
-            <!-- </a> -->
-            <div class="links-menu">
-                <a href="/src/views/sobre.html">Sobre</a>
-                <a href="/src/views/receitas.html">Receitas</a>
-            </div>
-        </header>
-    </div>
+        <title>Foodfy</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% block content %}
 
     <div class="banner">
         <div class="assunto">
@@ -39,19 +24,23 @@
 
     <div class="cards">
 
-        <div class="card">
+        {% for item of items %}
+
+        <div class="card" id="{{item.id}}">
             <div class="card__image-conteiner">
                 <img src="/public/image/burger.png" alt="Mais acessadas">
             </div>
             <div class="card__content">
-                <P>Triplo bacon burger</P>
+                <P>{{item.title}}</P>
             </div>
             <div class="card__info">
-                <P>por Jorge Relato</P>
+                <P>{{item.autor}}</P>
             </div>
         </div>
 
-        <div class="card">
+        {% endfor %}
+
+        {# <div class="card" id="02">
             <div class="card__image-conteiner">
                 <img src="/public/image/pizza.png" alt="Mais acessadas">
             </div>
@@ -63,7 +52,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="03">
             <div class="card__image-conteiner">
                 <img src="/public/image/espaguete.png" alt="Mais acessadas">
             </div>
@@ -75,19 +64,19 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="04">
             <div class="card__image-conteiner">
                 <img src="/public/image/lasanha.png" alt="Mais acessadas">
             </div>
             <div class="card__content">
-                <P>Lasanha mac n’ cheese</P>
+                <P>Lasanha mac n’cheese</P>
             </div>
             <div class="card__info">
                 <p>por Juliano Vieira</p>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="05">
             <div class="card__image-conteiner">
                 <img src="/public/image/doce.png" alt="Mais acessadas">
             </div>
@@ -99,7 +88,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="06">
             <div class="card__image-conteiner">
                 <img src="/public/image/asinhas.png" alt="Mais acessadas">
             </div>
@@ -109,7 +98,7 @@
             <div class="card__info">
                 <P>por Vania Steroski</P>
             </div>
-        </div>
+        </div> #}
 
     </div>
 
@@ -117,6 +106,4 @@
         <p>Todos direitos reservados, receitas Foodfy.</p>
     </div>
 
-</body>
-
-</html>
+{% endblock %}

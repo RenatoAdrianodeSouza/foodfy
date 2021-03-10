@@ -1,29 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.njk" %}
 
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/receitas.css">
-    <title>Receitas Foodfy</title>
-</head>
+    {% block head%}
+        <title>Receitas | Foodfy</title>
+    {% endblock%
 
-<body>
-    <div class="container">
-        <header>
-            <a href="">
-                <h1 class="home">
-                    <a href="/src/views/foodfy.html">Foodfy</a>
-                </h1>
-            </a>
-            <div class="links-menu">
-                <a href="/src/views/sobre.html">Sobre</a>
-                <a href="/src/views/receitas.html">Receitas</a>
-            </div>
-
-        </header>
+{% block content %}
 
         <div class="cards">
 
@@ -195,6 +176,4 @@
 
     <script src="/public/script/scripts.js"></script>
 
-</body>
-
-</html>
+{%  endblock %}

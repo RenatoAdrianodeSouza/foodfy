@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head%}
+        <title>Foodfy Home</title>
+    {% endblock%}
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="home">
+                <a href="/src/views/foodfy.njk">Foodfy</a>
+            </h1>
+            <div class="links-menu">
+                <a href="/src/views/sobre.njk">Sobre</a>
+                <a href="/src/views/receitas.njk">Receitas</a>
+            </div>
+        </header>
+    </div>
+
+    {% block content%}{% endblock %}
+
+</body>
+
+</html>
